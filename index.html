@@ -11,21 +11,21 @@
 <body>
   <div class="content">
     <h1>Formulário 🔥</h1>
-    <form>
+    <form id="form">
       <div>
-        <input class="inputs" type="text" placeholder="Digite seu nome">
+        <input class="inputs required" type="text" placeholder="Digite seu nome" oninput="nameValidate()">
         <span class="span-required">Nome deve ter no mínimo 3 caractéres</span>
       </div>
       <div>
-        <input class="inputs" type="email" placeholder="Digite seu melhor email">
+        <input class="inputs required" type="email" placeholder="Digite seu melhor email" oninput="emailValidate()">
         <span class="span-required">Digite um email válido</span>
       </div>
       <div>
-        <input class="inputs" type="password" placeholder="Senha">
+        <input class="inputs required" type="password" placeholder="Senha" oninput="mainPasswordValidate()">
         <span class="span-required">Digite um senha com no mínimo 8 caracteres</span>
       </div>
       <div>
-        <input class="inputs" type="password" placeholder="Repita sua senha">
+        <input class="inputs required" type="password" placeholder="Repita sua senha" oninput="reptePasswordValidadte()">
         <span class="span-required">Senhas devem ser compatíveis</span>
       </div>
       <textarea name="descricao" class="inputs" id="descricao" cols="25" rows="10" placeholder="Fale um pouco sobre você..."></textarea>
@@ -67,5 +67,6 @@
     </form>
   </div>
 </body>
+<script src="script.js"></script>
 
 </html>
